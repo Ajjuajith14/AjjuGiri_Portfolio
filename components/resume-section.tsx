@@ -180,7 +180,7 @@ export default function ResumeSection() {
                         </p>
                         <p className="text-sm text-gray-700 mb-2">
                           <span className="font-semibold">Frameworks & Libraries:</span> React.js, Next.js, Redux,
-                          Spring, Spring Boot, JDBC, JUnit, Prisma
+                          Spring, Spring Boot, JDBC, JUnit, Prisma, Cypress, Jest, React Testing Library
                         </p>
                         <p className="text-sm text-gray-700 mb-2">
                           <span className="font-semibold">Databases & Cloud:</span> PostgreSQL, MySQL, Supabase, SQL,
@@ -230,3 +230,46 @@ export default function ResumeSection() {
     </section>
   )
 }
+
+// "use client"
+
+// import type React from "react"
+// import { Download } from "lucide-react"
+// import { Button } from "@/components/ui/button"
+
+// interface ResumeSectionProps {
+//   title: string
+//   children: React.ReactNode
+// }
+
+// const ResumeSection: React.FC<ResumeSectionProps> = ({ title, children }) => {
+//   return (
+//     <section className="mb-8">
+//       <div className="flex justify-between items-center mb-4">
+//         <h2 className="text-2xl font-semibold">{title}</h2>
+//         <Button asChild className="bg-primary hover:bg-primary/90 neon-button">
+//           <a
+//             href="/AjjuGiri-Resume.pdf"
+//             download
+//             onClick={(e) => {
+//               // Force download attribute to work properly
+//               const link = document.createElement("a")
+//               link.href = "/AjjuGiri-Resume.pdf.pdf"
+//               link.download = "AjjuGiri-Resume.pdf"
+//               document.body.appendChild(link)
+//               link.click()
+//               document.body.removeChild(link)
+//               e.preventDefault()
+//             }}
+//           >
+//             <Download className="mr-2 h-4 w-4" />
+//             Download Resume
+//           </a>
+//         </Button>
+//       </div>
+//       <div>{children}</div>
+//     </section>
+//   )
+// }
+
+// export default ResumeSection
